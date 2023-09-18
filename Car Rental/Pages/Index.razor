@@ -1,0 +1,224 @@
+﻿@page "/"
+
+
+
+<PageTitle>Car Rantal</PageTitle>
+<h1>Car Rental</h1>
+
+
+<div class="row table-container" style="max-width: 80%">
+    <table class="table table-borderless">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">RegNo</th>
+                <th scope="col">Make</th>
+                <th scope="col">Odometer</th>
+                <th scope="col">Cost Km</th>
+                <th scope="col">Vehicle Type</th>
+                <th scope="col">$ day</th>
+                <th scope="col">Action</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="RegNr" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Make" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="0" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="0" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </td>
+                <td> </td>
+                <td>
+                    <button type="button" class="btn btn-outline-success btn-sm">Add</button>
+                </td>
+                <td>
+                    <span class="badge bg-success">Available</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">asd123</th>
+                <td>volvo</td>
+                <td>5000</td>
+                <td>1</td>
+                <td>Combi</td>
+                <td>200</td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="btn btn-outline-primary" type="button">Rent</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="badge bg-success">Available</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">qwe234</th>
+                <td>saab</td>
+                <td>10000</td>
+                <td>1</td>
+                <td>Sedan</td>
+                <td>100</td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="btn btn-outline-primary" type="button">Rent</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="badge bg-danger">Booked</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">zxs764</th>
+                <td>jeep</td>
+                <td>9000</td>
+                <td>1</td>
+                <td>Van</td>
+                <td>300</td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="btn btn-outline-primary" type="button">Rent</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="badge bg-success">Available</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br />
+
+<div class="row table-container w-50">
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">RegNo</th>
+                <th scope="col">Costumer</th>
+                <th scope="col">Km Rented</th>
+                <th scope="col">Km Returned</th>
+                <th scope="col">Rented</th>
+                <th scope="col">Returned</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">odk735</th>
+                <td>Lisa Nillson(127361)</td>
+                <td>10000</td>
+                <td></td>
+                <td>18/9/2023</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <span class="badge bg-danger">Open</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">ask565</th>
+                <td>Frida Andersson(182636)</td>
+                <td>1000</td>
+                <td>1000</td>
+                <td>18/9/2023</td>
+                <td>18/9/2023</td>
+                <td>200</td>
+                <td>
+                    <span class="badge bg-success">Closed</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br />
+
+<div class="row table-container w-50">
+    <table class="table table-borderless">
+        <thead class="table-dark">
+            <tr>
+                <th>SSN</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="SSN" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Last Name" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="First Name" />
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-outline-success btn-sm">Add</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">127361</th>
+                <td>Nillson</td>
+                <td>Lisa</td>
+            </tr>
+            <tr>
+                <th scope="row">182636</th>
+                <td>Andersson</td>
+                <td>Frida</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
