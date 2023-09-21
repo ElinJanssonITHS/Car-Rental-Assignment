@@ -1,6 +1,5 @@
-﻿.table-container {
-    border: 1px solid grey;
-
+﻿table {
+    border: 1px solid;
 }
 .table {
     margin-bottom: 0 !important;

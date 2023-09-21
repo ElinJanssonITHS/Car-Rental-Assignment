@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Car_Rental.Common.Interfaces
 {
-    public interface ICommon
+    public interface IPerson
     {
+        string FirstName { get; }
+        string LastName { get; }
+        int SocialSecurityNumber { get; }
     }
 }
