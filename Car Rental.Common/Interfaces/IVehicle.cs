@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Car_Rental.Common.Enums;
+﻿using Car_Rental.Common.Enums;
 
 namespace Car_Rental.Common.Interfaces
 {
@@ -11,12 +6,13 @@ namespace Car_Rental.Common.Interfaces
     {
         string RegNo { get; }
         string Make { get; }
-        int Odometer { get; }
+        double Odometer { get; }
         VehicleTypes VehicleType { get; }
         double CostKm { get; }
         double CostDay { get; }
         VehicleStatuses Status { get; }
         void ChangeStatus (VehicleStatuses status);
+        void UpdateOdometer (double km);
 
     }
 }

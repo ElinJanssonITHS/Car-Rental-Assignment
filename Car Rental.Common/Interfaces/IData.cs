@@ -1,7 +1,6 @@
-﻿using Car_Rental.Common.Classes;
-using Car_Rental.Common.Enums;
-using Car_Rental.Common.Interfaces;
-namespace Car_Rental.Data.Interfaces;
+﻿using Car_Rental.Common.Enums;
+
+namespace Car_Rental.Common.Interfaces;
 
 public interface IData
 {
