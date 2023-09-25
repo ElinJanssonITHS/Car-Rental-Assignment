@@ -5,5 +5,6 @@
         string FirstName { get; }
         string LastName { get; }
         int SocialSecurityNumber { get; }
+        string CustomerInformation { get; }
     }
 }

@@ -7,9 +7,10 @@ public class Bookning : IBooking
     private double _daysRented;
     public IPerson Customer { get; init; }
     public IVehicle Vehicle { get; init; }
+    public string RegNr { get; init; }
     public DateTime DayOfRent { get; init; }
     public DateTime DayOfReturn { get; private set; }
-    public double KmRented { get; init; }
+    public double OdometerBeforeRent { get; init; }
     public double Cost {get; private set;}
     public bool RentalStatus { get; private set;}
 
@@ -20,8 +21,9 @@ public class Bookning : IBooking
     { 
         Customer = customer;
         Vehicle = vehicle;
+        RegNr = vehicle.RegNo;
         DayOfRent = DateTime.Now;
-        KmRented = vehicle.Odometer;
+        OdometerBeforeRent = vehicle.Odometer;
         vehicle.ChangeStatus(VehicleStatuses.Booked);
         RentalStatus = true;
     }

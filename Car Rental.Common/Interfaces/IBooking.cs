@@ -9,7 +9,7 @@ namespace Car_Rental.Common.Interfaces
         IVehicle Vehicle { get; init; }
         DateTime DayOfRent { get; init; }
         DateTime DayOfReturn { get; }
-        double KmRented { get; init; }
+        double OdometerBeforeRent { get; init; }
         double Cost { get; }
         bool RentalStatus { get; }
 

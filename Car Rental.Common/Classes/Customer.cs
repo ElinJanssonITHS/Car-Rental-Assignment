@@ -10,7 +10,9 @@ public class Customer : IPerson
     public string FirstName => _firstName;
     public string LastName => _lastName;
     public int SocialSecurityNumber => _socialSecurityNumber;
+    public string CustomerInformation => $"{LastName} {FirstName} ({SocialSecurityNumber})";
     public Customer(string firstName, string lastName, int socialSecurityNumber)
         => (_firstName, _lastName, _socialSecurityNumber) = (firstName, lastName, socialSecurityNumber);
+
 
 }
