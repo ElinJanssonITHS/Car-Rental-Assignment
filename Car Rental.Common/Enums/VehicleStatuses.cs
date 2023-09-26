@@ -3,6 +3,6 @@
 public enum VehicleStatuses
 {
 
-    Available,
-    Booked
+    Booked = 1,
+    Available = 2,
 }

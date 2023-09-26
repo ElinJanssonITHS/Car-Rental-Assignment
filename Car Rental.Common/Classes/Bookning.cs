@@ -37,7 +37,15 @@ public class Bookning : IBooking
         Cost = _daysRented * vehicle.CostDay + kmDriven * vehicle.CostKm;
         RentalStatus = false;
     }
-    private void CalculateDays(DateTime dayOfRent, DateTime dayOfReturn) 
-        => _daysRented = (dayOfReturn - dayOfRent).TotalDays;
+    private void CalculateDays(DateTime dayOfRent, DateTime dayOfReturn)
+    {
+        var daysRented = (dayOfReturn - dayOfRent).TotalDays;
+        if (daysRented < 1)
+        {
+            _daysRented = 1;
+        }
+        else
+            _daysRented = daysRented;
+    }
 
 }

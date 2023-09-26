@@ -16,14 +16,18 @@ public class BookingProcessor
     }
     public IEnumerable<IVehicle> GetVehicles(VehicleStatuses status = default)
     {
-        //return _db.GetVehicles();
-      
-        if (status.Equals(default))
+        //return _db.GetVehicles();         status.Equals(default) && status == default 
+
+        if (status == VehicleStatuses.Booked)
         {
-            return _db.GetVehicles();
+            return _db.GetVehicles().Where(v => v.Status.Equals(VehicleStatuses.Booked));
+        }
+        else if (status == VehicleStatuses.Available)
+        {
+            return _db.GetVehicles().Where(v => v.Status.Equals(VehicleStatuses.Available));
         }
         else
-            return _db.GetVehicles().Where(v => v.Status.Equals(status)); 
+            return _db.GetVehicles();
 
     }
     public IEnumerable<IBooking> GetBookings()

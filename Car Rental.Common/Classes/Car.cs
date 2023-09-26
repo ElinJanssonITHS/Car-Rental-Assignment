@@ -11,7 +11,7 @@ public class Car : IVehicle
     private VehicleTypes _vehicleType;
     private double _costKm;
     private double _costDay;
-    private VehicleStatuses _status;
+    private VehicleStatuses _status = VehicleStatuses.Available;
     public string RegNo => _regNo;
 
     public string Make => _make;
